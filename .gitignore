@@ -1,0 +1,8 @@
+# Global ignored file for the project
+.exercism
+HINTS.md
+HELP.md
+#
+python/Exercism_practice.ipynb
+python/hello-world/__pycache__/
+python/hello-world/tempCodeRunnerFile.py
