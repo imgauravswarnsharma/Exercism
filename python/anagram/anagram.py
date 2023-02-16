@@ -20,3 +20,17 @@ def find_anagrams(word, candidates):
         if dict_words== dict_word:
             list_x.append(words)
     return list_x
+
+'''
+Alternate efficient solution
+
+def find_anagrams(word, candidates):
+    list_x = []
+    for words in candidates:
+        if word.lower() == words.lower():
+            continue
+        elif sorted(word.lower()) == sorted(words.lower()):
+            list_x.append(words)
+    return list_x
+
+'''
