@@ -9,3 +9,19 @@ def sum_of_multiples(limit, multiples):
             except ZeroDivisionError:
                 continue
     return sum_limit
+
+'''
+Alternate more efficient approach wrt Time Complexity:
+
+def sum_of_multiples(limit, multiples):
+    sum_set = set()
+    for num in multiples:
+        try:
+            for i in range(num,limit,num):
+                sum_set.add(i)
+        except ValueError:
+            continue
+
+    return sum(sum_set)
+
+'''
