@@ -11,3 +11,17 @@ def abbreviate(words):
                 abbreviation +=char[1].upper()
                 
     return abbreviation
+
+"""
+Alternative Solution:
+
+def abbreviate(words):
+    words=words.replace('-',' ').replace('_',' ')
+    list=words.split()
+    result=""
+
+    for item in list:
+        result+=item[0]
+    return result.upper()
+	
+	"""
